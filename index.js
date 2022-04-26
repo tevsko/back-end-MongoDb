@@ -10,6 +10,7 @@ app.use(express.json({extended: true}));
 const PORT = process.env.PORT || 4000;
 
 app.use('/api/usuarios', require('./routes/usuarios'));
+app.use('/api/axios', require('./routes/usuarios'));
 
 app.listen(PORT,() =>{
     console.log(`El servidor esta funcionado en el puerto ${PORT}`);
